@@ -1,0 +1,72 @@
+@import "src/styles";
+
+.window-border {
+  position: absolute;
+  border: 3px solid lightgray;
+  /*
+    box-shadow: 2px 2px 3px 0px black;*/
+  box-shadow: inset 0 2px 0px #dcffa6, 0 2px 5px #000;
+
+  .window {
+
+    .window-header {
+      height: 35px;
+      width: 100%;
+
+      .top-row {
+        background: #010180;
+        display: flex;
+        justify-content: space-between;
+
+        .text {
+          color: white;
+          display: inline;
+
+          img {
+            height: 14px;
+          }
+        }
+
+        .buttons {
+          margin-top: 3px;
+          margin-right: 4px;
+
+          img {
+            padding-left: 2px;
+            cursor: default !important;
+          }
+        }
+      }
+
+      .bottom-row {
+        display: flex;
+        background: $lightGray;
+        padding-left: 5px;
+        height: 40px;
+
+        div {
+          padding-right: 10px
+        }
+      }
+    }
+
+    .window-content {
+      width: 100%;
+      background: white;
+      position: absolute;
+      bottom: 0px;
+      top: 37px;
+      box-shadow: inset 0px 0px 2px 1px black;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+.underline {
+  text-decoration: underline;
+}
+

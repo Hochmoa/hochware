@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+$lightGray: #b9b9b9;
+$desktopBackground: #0a8375;
+body {
+  font-family: "Segoe UI BlackI";
+  font-size: 13px;
+}
+
+.grabSuggest {
+  cursor: grab !important;
+}
+
+.grab {
+  cursor: grabbing !important;
+}
+

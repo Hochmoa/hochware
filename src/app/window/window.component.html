@@ -1,0 +1,36 @@
+<div class="window-border" [ngClass]="{'hidden':!shown}" [ngStyle]="{'width':width+'px','height':height+'px'}" cdkDrag
+     (cdkDragStarted)="dragging=true"
+     (cdkDragEnded)="dragging=false"
+     (mouseenter)="grabSuggest=true"
+     (mouseleave)="grabSuggest=false"
+     #windowComponent>
+  <div class="window">
+    <div class="window-header" [ngClass]="{'grab':dragging,'grabSuggest':grabSuggest}">
+      <div class="top-row">
+        <div class="text">
+          <img src="{{titleIconPath}}"/>
+          <div class="text">{{title}}</div>
+        </div>
+        <div class="buttons">
+          <img src="assets/minify.png"/>
+          <img src="assets/expand.png"/>
+          <img src="assets/close.png" (click)="close()"/>
+        </div>
+      </div>
+      <div class="bottom-row">
+        <div class="edit-entry"><span class="underline">F</span>ile</div>
+        <div class="edit-entry"><span class="underline">E</span>dit</div>
+        <div class="edit-entry"><span class="underline">V</span>iew</div>
+        <div class="edit-entry"><span class="underline">?</span></div>
+      </div>
+    </div>
+    <div class="window-content">
+      <content-about *ngIf="windowType==WindowType.About"></content-about>
+      <!-- <content-folderCV *ngIf="windowType==WindowType.FolderCV"></content-folderCV>
+       <content-about *ngIf="windowType==WindowType.CVGerman"></content-about>
+       <content-about *ngIf="windowType==WindowType.CVEnglish"></content-about>
+       <content-about *ngIf="windowType==WindowType.Racoon"></content-about>-->
+    </div>
+  </div>
+
+</div>

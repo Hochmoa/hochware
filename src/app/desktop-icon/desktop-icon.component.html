@@ -1,0 +1,8 @@
+<div class="desktop-icon" cdkDrag (cdkDragStarted)="setSelected.emit(this);dragging=true"
+     (dblclick)="icon.doubleClick()"
+     (cdkDragEnded)="dragging=false"
+     (click)="setSelected.emit(this)"
+     [ngClass]="{'grab':dragging,'selected':icon.selected}">
+  <img src="{{icon.imgSrc}}"/>
+  <div>{{icon.text}}</div>
+</div>

@@ -1,0 +1,40 @@
+@import "src/styles";
+
+.desktop-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  padding: 16px;
+
+  img {
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    position: relative;
+    left: -20px;
+  }
+
+  div {
+    margin-top: 3px;
+    text-align: center;
+    color: white;
+    opacity: 0.8;
+    text-shadow: 0 0 1px #dddddd;
+    width: 80px;
+    left: -50px;
+    position: relative;
+    margin-left: 40px;
+  }
+}
+
+.desktop-icon:hover {
+  cursor: pointer;
+}
+
+
+.selected {
+  border: dashed 1px darkgray;
+  padding: 15px;
+}

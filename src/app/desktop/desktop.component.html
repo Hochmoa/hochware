@@ -1,0 +1,22 @@
+<div class="desktop" (click)="unselectedAll()">
+  <div class="draggable-icons-container">
+    <div>
+      <desktop-icon *ngFor="let icon of desktopIcons[0]"
+                    [icon]="icon"
+                    (setSelected)="setSelected($event)"></desktop-icon>
+    </div>
+    <div>
+      <desktop-icon *ngFor="let icon of desktopIcons[1]"
+                    [icon]="icon"
+                    (setSelected)="setSelected($event)"></desktop-icon>
+    </div>
+  </div>
+
+  <window #windowComponentAbout></window>
+  <window #windowComponentImpressum></window>
+  <window #windowComponentCVGerman></window>
+  <window #windowComponentCVEnglish></window>
+  <window #windowComponentCVFolder></window>
+  <window #windowComponentRacoon></window>
+  <task-bar></task-bar>
+</div>

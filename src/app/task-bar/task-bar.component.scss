@@ -1,0 +1,76 @@
+@import "src/styles";
+
+.task-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $lightGray;
+  height: 30px;
+  display: flex;
+}
+
+.windows-start-button {
+  display: flex;
+  align-items: center;
+  margin: 3px;
+  padding: 2px;
+
+  img {
+    height: 100%
+  }
+
+  div {
+    margin-left: 1px;
+    display: inline;
+  }
+}
+
+.click-to-start {
+  display: flex;
+  align-items: center;
+  margin: 3px;
+  padding: 2px;
+
+  img {
+    height: 100%
+  }
+
+  div {
+    margin-left: 1px;
+    display: inline;
+    font-size: 13px;
+    margin-top: 1px;
+  }
+}
+
+.system-tray {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  padding-right: 0;
+
+  img {
+    height: 30px;
+  }
+
+  div {
+    position: absolute;
+    margin-left: 1px;
+    display: inline;
+    font-size: 13px;
+    right: 12px;
+    margin-top: 2px;
+
+  }
+
+}
+
+.border-button {
+  border: solid 1px gray;
+  box-shadow: 2px 2px #39393b;
+  border-radius: 2px;
+}
+

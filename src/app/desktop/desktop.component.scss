@@ -1,0 +1,22 @@
+@import "src/styles";
+
+.desktop {
+  /*
+    min-height: 500px;*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $desktopBackground;
+}
+
+.draggable-icons-container {
+  padding: 6px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
