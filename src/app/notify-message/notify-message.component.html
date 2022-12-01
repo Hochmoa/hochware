@@ -1,0 +1,33 @@
+<div class="window-border" [ngClass]="{'hidden':!shown}" [ngStyle]="{'width':width+'px','height':height+'px'}" cdkDrag
+     (cdkDragStarted)="dragging=true"
+     (cdkDragEnded)="dragging=false"
+     (mouseenter)="grabSuggest=true"
+     (mouseleave)="grabSuggest=false"
+     #notifyComponent>
+  <div class="window">
+    <div class="window-header" [ngClass]="{'grab':dragging,'grabSuggest':grabSuggest}">
+      <div class="top-row">
+        <div class="text">
+          <div class="text">Windows NT</div>
+        </div>
+      </div>
+    </div>
+    <div class="window-content">
+      <div class="container">
+        <div class="left">
+          <img src="assets/warning.png" *ngIf="iconType===IconType.Warning"/>
+          <img src="assets/success.png" *ngIf="iconType===IconType.Success"/>
+          <img src="assets/error.png" *ngIf="iconType===IconType.Error"/>
+        </div>
+        <div class="right">
+          {{message}}
+        </div>
+      </div>
+      <div class="windows-start-button border-button" (click)="close()">
+        <div *ngIf="!cookieMsg">OK</div>
+        <div *ngIf="cookieMsg">🍪OK</div>
+      </div>
+    </div>
+  </div>
+
+</div>

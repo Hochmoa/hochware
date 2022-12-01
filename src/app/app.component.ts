@@ -1,4 +1,5 @@
-import {Component, OnChanges, OnInit, SimpleChanges, ViewEncapsulation} from '@angular/core';
+import {AfterViewInit, Component, OnChanges, OnInit, SimpleChanges, ViewChild, ViewEncapsulation} from '@angular/core';
+import {IconType, NotifyMessageComponent} from "./notify-message/notify-message.component";
 
 @Component({
   selector: 'app-root',
@@ -6,8 +7,19 @@ import {Component, OnChanges, OnInit, SimpleChanges, ViewEncapsulation} from '@a
   styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent implements OnChanges, OnInit {
+export class AppComponent implements OnChanges, OnInit, AfterViewInit {
+  ngAfterViewInit(): void {
+    if (!localStorage["acceptedCookies"]) {
+      this.cookieNotify.open("This website stores cookies on your browser. By pressing 'OK' you accept cookies.", IconType.Warning, true, () => {
+        localStorage["acceptedCookies"] = true;
+      });
+    }
+  }
+
   title = 'hochware-dos';
+
+
+  @ViewChild('cookieNotify') cookieNotify!: NotifyMessageComponent;
 
   ngOnChanges(changes: SimpleChanges): void {
     this.removeDragListeners();
@@ -24,7 +36,8 @@ export class AppComponent implements OnChanges, OnInit {
   ngOnInit(): void {
     setTimeout(() => {
       this.removeDragListeners();
-    }, 100)
+    }, 100);
+
   }
 
 }

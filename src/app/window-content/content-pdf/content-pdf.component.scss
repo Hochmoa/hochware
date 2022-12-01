@@ -1,0 +1,19 @@
+@import "src/styles";
+
+.about-container {
+
+  textarea {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    border: 0;
+    padding: 0px;
+    outline: none;
+    resize: none
+  }
+}
+
+.ng2-pdf-viewer-container {
+  overflow-x: hidden !important;
+}

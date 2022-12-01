@@ -1,6 +1,7 @@
 import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import {DesktopIconComponent} from "../desktop-icon/desktop-icon.component";
 import {WindowComponent, WindowType} from "../window/window.component";
+import {IconType, NotifyMessageComponent} from "../notify-message/notify-message.component";
 
 @Component({
   selector: 'desktop',
@@ -9,19 +10,20 @@ import {WindowComponent, WindowType} from "../window/window.component";
 })
 export class DesktopComponent implements OnInit, AfterViewInit {
 
-  @ViewChild('windowComponentAbout', {static: true}) windowComponentAbout!: WindowComponent;
-  @ViewChild('windowComponentCVFolder', {static: true}) windowComponentCVFolder!: WindowComponent;
-  @ViewChild('windowComponentCVEnglish', {static: true}) windowComponentCVEnglish!: WindowComponent;
-  @ViewChild('windowComponentCVGerman', {static: true}) windowComponentCVGerman!: WindowComponent;
-  @ViewChild('windowComponentImpressum', {static: true}) windowComponentImpressum!: WindowComponent;
-  @ViewChild('windowComponentRacoon', {static: true}) windowComponentRacoon!: WindowComponent;
+  @ViewChild('windowComponentAbout') windowComponentAbout!: WindowComponent;
+  @ViewChild('windowComponentCVFolder') windowComponentCVFolder!: WindowComponent;
+
+  @ViewChild('windowComponentImpressum') windowComponentImpressum!: WindowComponent;
+  @ViewChild('windowComponentRacoon') windowComponentRacoon!: WindowComponent;
+  @ViewChild('notifyMessage') notifyMessage!: NotifyMessageComponent;
+
   desktopIcons: DesktopIcon[][] = [[
     {
       imgSrc: 'assets/my-computer.png',
       text: 'My Computer',
       id: 0,
       doubleClick: () => {
-
+        this.notifyMessage.open("Task failed successfully.", IconType.Success)
       }
     },
     {
@@ -29,7 +31,7 @@ export class DesktopComponent implements OnInit, AfterViewInit {
       text: 'Network Neightborhood',
       id: 1,
       doubleClick: () => {
-
+        this.notifyMessage.open("Task failed successfully.", IconType.Success)
       }
     },
     {
@@ -46,16 +48,7 @@ export class DesktopComponent implements OnInit, AfterViewInit {
       text: 'Recycle Bin',
       id: 3,
       doubleClick: () => {
-        window.open("https://en.wikipedia.org/wiki/Raccoon", '_blank');
-      }
-    },
-    {
-      imgSrc: 'assets/opera.png',
-      text: 'Opera',
-      id: 4,
-      doubleClick: () => {
-        window.open("https://www.hongkiat.com/blog/reasons-to-use-opera-browser", '_blank');
-
+        this.windowComponentRacoon.open(WindowType.Racoon)
       }
     }
   ], [
@@ -72,7 +65,7 @@ export class DesktopComponent implements OnInit, AfterViewInit {
       text: 'CVs',
       id: 6,
       doubleClick: () => {
-        this.windowComponentAbout.open(WindowType.FolderCV)
+        this.windowComponentCVFolder.open(WindowType.FolderCV)
       }
     }
   ]]
@@ -93,7 +86,6 @@ export class DesktopComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.windowComponentAbout.open(WindowType.About);
   }
 }
 

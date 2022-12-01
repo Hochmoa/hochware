@@ -26,10 +26,10 @@
     </div>
     <div class="window-content">
       <content-about *ngIf="windowType==WindowType.About"></content-about>
-      <!-- <content-folderCV *ngIf="windowType==WindowType.FolderCV"></content-folderCV>
-       <content-about *ngIf="windowType==WindowType.CVGerman"></content-about>
-       <content-about *ngIf="windowType==WindowType.CVEnglish"></content-about>
-       <content-about *ngIf="windowType==WindowType.Racoon"></content-about>-->
+      <content-cv-folder *ngIf="windowType==WindowType.FolderCV"></content-cv-folder>
+      <content-pdf *ngIf="windowType==WindowType.CVGerman||windowType==WindowType.CVEnglish"
+                   [pdfSrc]="pdfSrc"></content-pdf>
+      <content-racoon *ngIf="windowType==WindowType.Racoon"></content-racoon>
     </div>
   </div>
 

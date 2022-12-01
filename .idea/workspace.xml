@@ -1,36 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77a933c0-1645-4cd1-8c9c-554a3d3ef15d" name="Changes" comment="Init">
-      <change afterPath="$PROJECT_DIR$/src/app/desktop-icon/desktop-icon.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/desktop-icon/desktop-icon.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/desktop-icon/desktop-icon.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/desktop/desktop.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/desktop/desktop.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/desktop/desktop.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/task-bar/task-bar.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/task-bar/task-bar.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/task-bar/task-bar.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-about/content-about.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-about/content-about.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-about/content-about.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/window/window.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/window/window.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/window/window.component.ts" afterDir="false" />
+    <list default="true" id="77a933c0-1645-4cd1-8c9c-554a3d3ef15d" name="Changes" comment="Work work">
+      <change afterPath="$PROJECT_DIR$/src/app/notify-message/notify-message.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/notify-message/notify-message.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/notify-message/notify-message.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-cv-folder/content-cv-folder.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-cv-folder/content-cv-folder.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-cv-folder/content-cv-folder.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-pdf/content-pdf.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-pdf/content-pdf.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-pdf/content-pdf.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-racoon/content-racoon.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-racoon/content-racoon.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-racoon/content-racoon.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/CV_English.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/CV_german.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hochware-dos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hochware-dos.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.spec.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/desktop-icon/desktop-icon.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/desktop-icon/desktop-icon.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/desktop-icon/desktop-icon.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/desktop-icon/desktop-icon.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/desktop-icon/desktop-icon.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/desktop-icon/desktop-icon.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/desktop/desktop.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/desktop/desktop.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/desktop/desktop.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/desktop/desktop.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/window/window.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/window/window.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/window/window.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/window/window.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,28 +50,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Martin/Documents/hochware-dos/src/app/window-content",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "actions.on.save",
-    "ts.external.directory.path": "C:\\Users\\Martin\\Documents\\hochware-dos\\node_modules\\typescript\\lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Martin/Documents/hochware-dos/src/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Martin\\Documents\\hochware-dos\\node_modules\\typescript\\lib&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Martin\Documents\hochware-dos\src\assets" />
       <recent name="C:\Users\Martin\Documents\hochware-dos\src\app\window-content" />
       <recent name="C:\Users\Martin\Documents\hochware-dos\src\app" />
       <recent name="C:\Users\Martin\Documents\hochware-dos\src\assets\vars" />
-      <recent name="C:\Users\Martin\Documents\hochware-dos\src\assets" />
       <recent name="C:\Users\Martin\Documents\hochware-dos\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Martin\Documents\hochware-dos\src\assets" />
       <recent name="C:\Users\Martin\Documents\hochware-dos\src\assets\variables" />
       <recent name="C:\Users\Martin\Documents\hochware-dos\src\app" />
       <recent name="C:\Users\Martin\Documents\hochware-dos\src" />
@@ -91,7 +90,8 @@
       <workItem from="1669740606024" duration="2484000" />
       <workItem from="1669785063630" duration="651000" />
       <workItem from="1669786822307" duration="10212000" />
-      <workItem from="1669805920634" duration="5034000" />
+      <workItem from="1669805920634" duration="10680000" />
+      <workItem from="1669872653099" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1669741343229</created>
@@ -128,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669741874241</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Work work">
+      <created>1669812341296</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669812341296</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +156,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+    <MESSAGE value="Work work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work work" />
   </component>
 </project>

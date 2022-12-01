@@ -1,0 +1,104 @@
+@import "src/styles";
+
+.window-border {
+  position: absolute;
+  border: 3px solid lightgray;
+  /*
+    box-shadow: 2px 2px 3px 0px black;*/
+  box-shadow: inset 0 2px 0px #dcffa6, 0 2px 5px #000;
+
+  .window {
+
+    .window-header {
+      height: 15px;
+      width: 100%;
+
+      .top-row {
+        background: #010180;
+        display: flex;
+        justify-content: space-between;
+
+        .text {
+          color: white;
+          display: inline;
+
+          img {
+            height: 14px;
+          }
+        }
+
+        .buttons {
+          margin-top: 3px;
+          margin-right: 4px;
+
+          img {
+            padding-left: 2px;
+            cursor: default !important;
+          }
+        }
+      }
+    }
+
+    .window-content {
+      width: 100%;
+      background: $lightGray;
+      position: absolute;
+      bottom: 0px;
+      top: 15px;
+      box-shadow: inset 0px 0px 2px 1px black;
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 81%;
+
+        .left {
+          img {
+            height: 38px;
+          }
+        }
+
+        .right {
+          margin-right: 53px;
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+.underline {
+  text-decoration: underline;
+}
+
+
+.windows-start-button {
+  align-items: center;
+  margin: 3px;
+  padding: 2px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 50px;
+  margin-left: -25px;
+
+  div {
+    margin-left: 1px;
+    text-align: center;
+  }
+}
+
+.border-button {
+  border: solid 1px gray;
+  box-shadow: 2px 2px #39393b;
+  border-radius: 2px;
+}
+
