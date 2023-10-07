@@ -2,7 +2,7 @@ stages:
   - build
   - deploy
 
-image: dind
+image: docker:24.0.5-dind
 
 build:
   stage: build
