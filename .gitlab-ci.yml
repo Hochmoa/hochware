@@ -2,6 +2,8 @@ stages:
   - build
   - deploy
 
+image: dind
+
 build:
   stage: build
   script:
