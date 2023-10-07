@@ -7,8 +7,7 @@ image: node:16.17-alpine
 build:
   stage: build
   script:
-    - npm install
-    - npm run build
+    - docker build -t hochware-dos .
   artifacts:
     paths:
       - dist/
@@ -23,7 +22,6 @@ deploy:
   script:
     - apk update
     - apk add openssh-client
-    - docker build -t hochware-dos .
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
     - docker push "$CI_REGISTRY_IMAGE/hochware-dos"
     - ssh root@85.214.56.221 "docker pull https://gitlab.com/mar.hochmair/hochware-dos"
