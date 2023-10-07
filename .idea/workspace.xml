@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="77a933c0-1645-4cd1-8c9c-554a3d3ef15d" name="Changes" comment="Work work">
-      <change afterPath="$PROJECT_DIR$/src/app/notify-message/notify-message.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/notify-message/notify-message.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/notify-message/notify-message.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-cv-folder/content-cv-folder.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-cv-folder/content-cv-folder.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-cv-folder/content-cv-folder.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-pdf/content-pdf.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-pdf/content-pdf.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-pdf/content-pdf.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-racoon/content-racoon.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-racoon/content-racoon.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/window-content/content-racoon/content-racoon.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/CV_English.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/CV_german.pdf" afterDir="false" />
+    <list default="true" id="77a933c0-1645-4cd1-8c9c-554a3d3ef15d" name="Changes" comment="Forgot imgs">
+      <change afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/desktop-icon/desktop-icon.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/desktop-icon/desktop-icon.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/desktop-icon/desktop-icon.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/desktop-icon/desktop-icon.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/desktop-icon/desktop-icon.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/desktop-icon/desktop-icon.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/desktop/desktop.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/desktop/desktop.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/desktop/desktop.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/desktop/desktop.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/window/window.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/window/window.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/window/window.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/window/window.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,12 +36,15 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Martin/Documents/hochware-dos/src/assets&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/marho/Documents/hochware-dos&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Martin\\Documents\\hochware-dos\\node_modules\\typescript\\lib&quot;
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Martin\\Documents\\hochware-dos\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -92,6 +76,11 @@
       <workItem from="1669786822307" duration="10212000" />
       <workItem from="1669805920634" duration="10680000" />
       <workItem from="1669872653099" duration="22000" />
+      <workItem from="1669896490217" duration="638000" />
+      <workItem from="1669917022480" duration="3000" />
+      <workItem from="1696666353787" duration="790000" />
+      <workItem from="1696673267001" duration="1764000" />
+      <workItem from="1696680040939" duration="1136000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1669741343229</created>
@@ -135,7 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669812341296</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="FInished first verison">
+      <created>1669896499787</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669896499787</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Forgot imgs">
+      <created>1669896514734</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669896514734</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +160,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Init" />
     <MESSAGE value="Work work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Work work" />
+    <MESSAGE value="FInished first verison" />
+    <MESSAGE value="Forgot imgs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forgot imgs" />
   </component>
 </project>
