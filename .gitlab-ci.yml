@@ -14,20 +14,13 @@ build:
   stage: build
   script:
     - docker build -t $IMAGE_NAME .
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
     - docker push $IMAGE_NAME
 
 deploy:
   stage: deploy
-  before_script:
-    - mkdir -p /root/.ssh
-    - echo "$SSH_PRIVATE_KEY" > /root/.ssh/id_rsa
-    - chmod 600 /root/.ssh/id_rsa
-    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > /root/.ssh/config
   script:
-    - apk update
-    - apk add openssh-client
-    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
-    - docker push "$CI_REGISTRY_IMAGE/hochware-dos"
-    - ssh root@85.214.56.221 "docker pull https://gitlab.com/mar.hochmair/hochware-dos"
+    - ssh root@85.214.56.221 "docker pull $CI_REGISTRY_IMAGE"
+    - ssh root@85.214.56.221 "docker run -d -p 80:80 --name hochware-dos $CI_REGISTRY_IMAGE"
 
 
