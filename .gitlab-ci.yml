@@ -7,13 +7,14 @@ image: docker:latest
 services:
   - docker:dind
 
+variables:
+  IMAGE_NAME: hochware-des
+
 build:
   stage: build
   script:
-    - docker build -t hochware-dos .
-  artifacts:
-    paths:
-      - dist/
+    - docker build -t $IMAGE_NAME .
+    - docker push $IMAGE_NAME
 
 deploy:
   stage: deploy
