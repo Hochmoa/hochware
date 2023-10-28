@@ -7,7 +7,7 @@ image: docker:24.0.5-dind
 build:
   stage: build
   script:
-    - cd app
+    - cd src
     - docker build -t hochware-dos .
   artifacts:
     paths:
