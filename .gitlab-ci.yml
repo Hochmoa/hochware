@@ -2,12 +2,14 @@ stages:
   - build
   - deploy
 
-image: docker:24.0.5-dind
+image: docker:latest
+
+services:
+  - docker:dind
 
 build:
   stage: build
   script:
-    - cd src
     - docker build -t hochware-dos .
   artifacts:
     paths:
