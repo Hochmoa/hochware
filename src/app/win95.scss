@@ -1,0 +1,51 @@
+// Shared Windows-95 widgets. Import with @import "src/app/win95";
+@import "src/styles";
+
+$win95Dark: #39393b;
+
+// Raised push button: light edge top/left, dark edge bottom/right, presses in on :active.
+.win-button {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 8px 0 6px;
+  background: $lightGray;
+  color: black;
+  text-decoration: none;
+  font: inherit;
+  cursor: default;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid $win95Dark;
+  border-bottom: 1px solid $win95Dark;
+  box-shadow: 1px 1px 0 black, inset 1px 1px 0 #dfdfdf;
+  user-select: none;
+
+  &:active:not(:disabled) {
+    border-top: 1px solid $win95Dark;
+    border-left: 1px solid $win95Dark;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    box-shadow: inset 1px 1px 0 black;
+    padding: 1px 7px 0 7px;
+  }
+
+  &:disabled {
+    color: #808080;
+    text-shadow: 1px 1px 0 white;
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+}
+
+// Sunken white field (address bar, status cells).
+@mixin sunken-field {
+  background: white;
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  box-shadow: inset 1px 1px 0 black;
+}

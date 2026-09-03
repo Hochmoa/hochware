@@ -1,0 +1,99 @@
+@import "src/styles";
+@import "src/app/win95";
+
+.explorer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background: $lightGray;
+}
+
+.explorer-toolbar {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  padding: 0 4px;
+  border-bottom: 1px solid #808080;
+  box-shadow: 0 1px 0 white;
+  flex: none;
+
+  .win-button img {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    image-rendering: pixelated;
+  }
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 10px;
+  min-width: 0;
+
+  .address-label {
+    margin-right: 6px;
+    white-space: nowrap;
+  }
+
+  .address-field {
+    @include sunken-field;
+    flex: 1;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.icon-grid {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: white;
+  box-shadow: inset 1px 1px 0 #808080;
+  padding: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  desktop-icon {
+    display: block;
+    width: 96px;
+    margin-bottom: 6px;
+  }
+
+  .empty {
+    padding: 10px;
+    color: #39393b;
+  }
+}
+
+.status-bar {
+  display: flex;
+  height: 20px;
+  flex: none;
+  padding: 2px 2px 0;
+  gap: 2px;
+
+  .status-cell {
+    @include sunken-field;
+    flex: 1;
+    padding: 0 4px;
+    line-height: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+
+    &.wide {
+      flex: 2;
+    }
+  }
+}

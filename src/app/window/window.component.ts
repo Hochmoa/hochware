@@ -1,6 +1,6 @@
 import {ChangeDetectorRef, Component, ElementRef, Input, ViewChild} from '@angular/core';
-import {DesktopIconComponent} from "../desktop-icon/desktop-icon.component";
 import {CdkDragStart} from "@angular/cdk/drag-drop";
+import {GalleryImage} from "../gallery/gallery.service";
 
 @Component({
   selector: 'window',
@@ -18,6 +18,8 @@ export class WindowComponent {
   dragging!: boolean;
   grabSuggest!: boolean;
   pdfSrc!: string;
+  viewerImages: GalleryImage[] = [];
+  viewerIndex: number = 0;
 
   constructor(private changeDetection: ChangeDetectorRef) {
   }
@@ -30,8 +32,7 @@ export class WindowComponent {
       case WindowType.About: {
         this.title = "About.txt";
         this.titleIconPath = "assets/text-file.png";
-        let e = this.windowComponent.nativeElement;
-        e.style.transform = `translate3d(${window.innerWidth / 2 - this.width / 2}px, ${window.innerHeight / 2 - this.height / 2}px, 0px)`;
+        this.center();
         break;
       }
       case WindowType.Racoon: {
@@ -39,8 +40,7 @@ export class WindowComponent {
         this.titleIconPath = "assets/text-file.png";
         this.width = 400;
         this.height = 338;
-        let e = this.windowComponent.nativeElement;
-        e.style.transform = `translate3d(${window.innerWidth / 2 - this.width / 2}px, ${window.innerHeight / 2 - this.height / 2}px, 0px)`;
+        this.center();
         break;
       }
       case WindowType.CVEnglish: {
@@ -49,8 +49,7 @@ export class WindowComponent {
         this.pdfSrc = "assets/CV_English.pdf";
         this.width = 600;
         this.height = 500;
-        let e = this.windowComponent.nativeElement;
-        e.style.transform = `translate3d(0px,-300px, 0px)`;
+        this.moveTo(0, -300);
         break;
       }
       case WindowType.CVGerman: {
@@ -59,22 +58,52 @@ export class WindowComponent {
         this.pdfSrc = "assets/CV_German.pdf";
         this.width = 600;
         this.height = 500;
-        let e = this.windowComponent.nativeElement;
-        e.style.transform = `translate3d(0px,-300px, 0px)`;
+        this.moveTo(0, -300);
         break;
       }
       case WindowType.FolderCV: {
         this.title = "CVs";
         this.titleIconPath = "assets/folder.png";
-        let e = this.windowComponent.nativeElement;
-        e.style.transform = `translate3d(${window.innerWidth / 2 - this.width / 2}px, ${window.innerHeight / 2 - this.height / 2}px, 0px)`;
+        this.center();
+        break;
+      }
+      case WindowType.Pics: {
+        this.title = "Pics";
+        this.titleIconPath = "assets/printer.png";
+        this.width = Math.min(640, window.innerWidth - 20);
+        this.height = Math.min(460, window.innerHeight - 60);
+        this.center();
         break;
       }
     }
 
-
     this.shown = true;
     this.changeDetection.detectChanges()
+  }
+
+  /** Opens this window as an image viewer over the given folder images, starting at index. */
+  openImage(images: GalleryImage[], index: number) {
+    this.windowType = WindowType.ImageViewer;
+    this.viewerImages = images;
+    this.viewerIndex = index;
+    this.titleIconPath = "assets/image-file.png";
+    this.width = Math.min(800, window.innerWidth - 20);
+    this.height = Math.min(600, window.innerHeight - 60);
+    this.updateViewerTitle();
+    // Nested inside the explorer window: offset so the viewer sits roughly centred on screen.
+    const host = this.windowComponent.nativeElement.parentElement?.getBoundingClientRect();
+    if (host) {
+      this.moveTo(window.innerWidth / 2 - this.width / 2 - host.left, window.innerHeight / 2 - this.height / 2 - host.top);
+    } else {
+      this.center();
+    }
+    this.shown = true;
+    this.changeDetection.detectChanges();
+  }
+
+  onViewerIndexChange(index: number) {
+    this.viewerIndex = index;
+    this.updateViewerTitle();
   }
 
   close() {
@@ -82,13 +111,25 @@ export class WindowComponent {
   }
 
   checkDrag(event: CdkDragStart<any>): void {
-    console.log(event);
     if (!this.grabSuggest) {
       event.event.preventDefault();
     }
   }
+
+  private updateViewerTitle() {
+    const img = this.viewerImages[this.viewerIndex];
+    this.title = img ? img.name + " (" + (this.viewerIndex + 1) + "/" + this.viewerImages.length + ")" : "Image";
+  }
+
+  private center() {
+    this.moveTo(window.innerWidth / 2 - this.width / 2, window.innerHeight / 2 - this.height / 2);
+  }
+
+  private moveTo(x: number, y: number) {
+    this.windowComponent.nativeElement.style.transform = "translate3d(" + x + "px, " + y + "px, 0px)";
+  }
 }
 
 export enum WindowType {
-  About, FolderCV, CVGerman, CVEnglish, Racoon
+  About, FolderCV, CVGerman, CVEnglish, Racoon, Pics, ImageViewer
 }

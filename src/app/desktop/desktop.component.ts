@@ -15,6 +15,7 @@ export class DesktopComponent implements OnInit, AfterViewInit {
 
   @ViewChild('windowComponentImpressum') windowComponentImpressum!: WindowComponent;
   @ViewChild('windowComponentRacoon') windowComponentRacoon!: WindowComponent;
+  @ViewChild('windowComponentPics') windowComponentPics!: WindowComponent;
   @ViewChild('notifyMessage') notifyMessage!: NotifyMessageComponent;
 
   desktopIcons: DesktopIcon[][] = [[
@@ -66,6 +67,14 @@ export class DesktopComponent implements OnInit, AfterViewInit {
       id: 6,
       doubleClick: () => {
         this.windowComponentCVFolder.open(WindowType.FolderCV)
+      }
+    },
+    {
+      imgSrc: 'assets/printer.png',
+      text: 'Printer',
+      id: 7,
+      doubleClick: () => {
+        this.windowComponentPics.open(WindowType.Pics)
       }
     }
   ]]

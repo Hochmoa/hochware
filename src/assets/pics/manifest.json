@@ -1,0 +1,209 @@
+{
+  "name": "Pics",
+  "path": "",
+  "folders": [
+    {
+      "name": "Drone",
+      "path": "drone",
+      "folders": [],
+      "images": [
+        {
+          "name": "Dont ask...",
+          "src": "assets/pics/drone/dont-ask.jpg",
+          "width": 1600,
+          "height": 1205
+        },
+        {
+          "name": "Drone",
+          "src": "assets/pics/drone/drone.jpg",
+          "width": 1600,
+          "height": 1205
+        },
+        {
+          "name": "First ever try. It couldnt even fly because it wasnt sturdy enough",
+          "src": "assets/pics/drone/first-ever-try-it-couldnt-even-fly-because-it-wasnt-sturdy-enough.jpg",
+          "width": 1600,
+          "height": 1205
+        },
+        {
+          "name": "Googly eyes",
+          "src": "assets/pics/drone/googly-eyes.jpg",
+          "width": 1205,
+          "height": 1600
+        },
+        {
+          "name": "I need to become better with soldering",
+          "src": "assets/pics/drone/i-need-to-become-better-with-soldering.jpg",
+          "width": 1600,
+          "height": 1205
+        },
+        {
+          "name": "I really thought i could 3d-print the frame",
+          "src": "assets/pics/drone/i-really-thought-i-could-3d-print-the-frame.jpg",
+          "width": 1600,
+          "height": 1205
+        },
+        {
+          "name": "S4 motors with S6 battery..recipe for disaster",
+          "src": "assets/pics/drone/s4-motors-with-s6-battery-recipe-for-disaster.jpg",
+          "width": 1600,
+          "height": 1205
+        },
+        {
+          "name": "Self built drone next to prebuilt drone",
+          "src": "assets/pics/drone/self-built-drone-next-to-prebuilt-drone.jpg",
+          "width": 1600,
+          "height": 1205
+        },
+        {
+          "name": "Soldering",
+          "src": "assets/pics/drone/soldering.jpg",
+          "width": 1600,
+          "height": 1205
+        },
+        {
+          "name": "that CAD took a while",
+          "src": "assets/pics/drone/that-cad-took-a-while.png",
+          "width": 1142,
+          "height": 745
+        },
+        {
+          "name": "The skits look funky",
+          "src": "assets/pics/drone/the-skits-look-funky.jpg",
+          "width": 1600,
+          "height": 1205
+        },
+        {
+          "name": "Tried to build my own goggles but it was too expensive",
+          "src": "assets/pics/drone/tried-to-build-my-own-goggles-but-it-was-too-expensive.jpg",
+          "width": 1600,
+          "height": 1205
+        }
+      ]
+    },
+    {
+      "name": "FSOA",
+      "path": "fsoa",
+      "folders": [],
+      "images": [
+        {
+          "name": "Bottom crystal",
+          "src": "assets/pics/fsoa/bottom-crystal.jpg",
+          "width": 1205,
+          "height": 1600
+        },
+        {
+          "name": "Came out nice!",
+          "src": "assets/pics/fsoa/came-out-nice.jpg",
+          "width": 1205,
+          "height": 1600
+        },
+        {
+          "name": "Finished!",
+          "src": "assets/pics/fsoa/finished.jpg",
+          "width": 1205,
+          "height": 1600
+        },
+        {
+          "name": "Halfway done!(not really)",
+          "src": "assets/pics/fsoa/halfway-done-not-really.jpg",
+          "width": 1205,
+          "height": 1600
+        },
+        {
+          "name": "I like the glow",
+          "src": "assets/pics/fsoa/i-like-the-glow.jpg",
+          "width": 1205,
+          "height": 1600
+        },
+        {
+          "name": "I made a mini-version first",
+          "src": "assets/pics/fsoa/i-made-a-mini-version-first.jpg",
+          "width": 1600,
+          "height": 1205
+        },
+        {
+          "name": "I swear its not a bomb, just 2 batteries, a switch and a LED",
+          "src": "assets/pics/fsoa/i-swear-its-not-a-bomb-just-2-batteries-a-switch-and-a-led.jpg",
+          "width": 1205,
+          "height": 1600
+        },
+        {
+          "name": "Magnetic lock in the bottom crystal",
+          "src": "assets/pics/fsoa/magnetic-lock-in-the-bottom-crystal.jpg",
+          "width": 1205,
+          "height": 1600
+        },
+        {
+          "name": "Oh god, plz let it be possible to assemble it...",
+          "src": "assets/pics/fsoa/oh-god-plz-let-it-be-possible-to-assemble-it.jpg",
+          "width": 1205,
+          "height": 1600
+        },
+        {
+          "name": "Sexy staff",
+          "src": "assets/pics/fsoa/sexy-staff.jpg",
+          "width": 1205,
+          "height": 1600
+        },
+        {
+          "name": "Some parts on the top",
+          "src": "assets/pics/fsoa/some-parts-on-the-top.jpg",
+          "width": 1205,
+          "height": 1600
+        },
+        {
+          "name": "Top Crystal has a powerbank",
+          "src": "assets/pics/fsoa/top-crystal-has-a-powerbank.jpg",
+          "width": 1205,
+          "height": 1600
+        },
+        {
+          "name": "Wiring job in the top part",
+          "src": "assets/pics/fsoa/wiring-job-in-the-top-part.jpg",
+          "width": 1600,
+          "height": 1205
+        }
+      ]
+    },
+    {
+      "name": "Robot Arm",
+      "path": "robot-arm",
+      "folders": [],
+      "images": [
+        {
+          "name": "CAD of robot arm",
+          "src": "assets/pics/robot-arm/cad-of-robot-arm.jpg",
+          "width": 1205,
+          "height": 1600
+        },
+        {
+          "name": "It was a nice experiment, but the motors were too weak",
+          "src": "assets/pics/robot-arm/it-was-a-nice-experiment-but-the-motors-were-too-weak.jpg",
+          "width": 1205,
+          "height": 1600
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "Im just gonna print my own beer",
+      "src": "assets/pics/im-just-gonna-print-my-own-beer.jpg",
+      "width": 1205,
+      "height": 1600
+    },
+    {
+      "name": "No one will ever know how it works",
+      "src": "assets/pics/no-one-will-ever-know-how-it-works.jpg",
+      "width": 1600,
+      "height": 1205
+    },
+    {
+      "name": "Work station",
+      "src": "assets/pics/work-station.jpg",
+      "width": 1600,
+      "height": 1205
+    }
+  ]
+}

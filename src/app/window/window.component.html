@@ -30,6 +30,10 @@
       <content-pdf *ngIf="windowType==WindowType.CVGerman||windowType==WindowType.CVEnglish"
                    [pdfSrc]="pdfSrc"></content-pdf>
       <content-racoon *ngIf="windowType==WindowType.Racoon"></content-racoon>
+      <content-pics *ngIf="windowType==WindowType.Pics" [active]="shown"></content-pics>
+      <content-image-viewer *ngIf="windowType==WindowType.ImageViewer"
+                            [images]="viewerImages" [index]="viewerIndex" [active]="shown"
+                            (indexChange)="onViewerIndexChange($event)" (closeRequest)="close()"></content-image-viewer>
     </div>
   </div>
 

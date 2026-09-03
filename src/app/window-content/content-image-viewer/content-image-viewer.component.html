@@ -1,0 +1,17 @@
+<ng-container>
+  <div class="viewer">
+    <div class="viewer-toolbar">
+      <button class="win-button" type="button" (click)="prev()" [disabled]="!hasPrev" title="Previous (←)">
+        <img src="assets/arrow-left.png" alt="Previous"/>
+      </button>
+      <button class="win-button" type="button" (click)="next()" [disabled]="!hasNext" title="Next (→)">
+        <img src="assets/arrow-right.png" alt="Next"/>
+      </button>
+      <span class="counter">{{index + 1}} / {{images.length}}</span>
+      <span class="caption" *ngIf="image">{{image.name}}</span>
+    </div>
+    <div class="stage" (click)="next()">
+      <img *ngIf="image" [src]="image.src" [alt]="image.name" draggable="false"/>
+    </div>
+  </div>
+</ng-container>

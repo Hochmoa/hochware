@@ -12,6 +12,9 @@ import {ContentRacoonComponent} from "./window-content/content-racoon/content-ra
 import {NotifyMessageComponent} from "./notify-message/notify-message.component";
 import {ContentCvFolderComponent} from "./window-content/content-cv-folder/content-cv-folder.component";
 import {ContentPdfComponent} from "./window-content/content-pdf/content-pdf.component";
+import {ContentPicsComponent} from "./window-content/content-pics/content-pics.component";
+import {ContentImageViewerComponent} from "./window-content/content-image-viewer/content-image-viewer.component";
+import {HttpClientModule} from "@angular/common/http";
 
 import {PdfViewerModule} from 'ng2-pdf-viewer';
 
@@ -26,11 +29,14 @@ import {PdfViewerModule} from 'ng2-pdf-viewer';
     ContentRacoonComponent,
     NotifyMessageComponent,
     ContentCvFolderComponent,
-    ContentPdfComponent
+    ContentPdfComponent,
+    ContentPicsComponent,
+    ContentImageViewerComponent
   ],
   imports: [
     BrowserModule,
     DragDropModule,
+    HttpClientModule,
     PdfViewerModule
   ],
   providers: [],

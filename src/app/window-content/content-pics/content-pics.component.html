@@ -1,0 +1,26 @@
+<ng-container>
+  <div class="explorer" (click)="unselectAll()">
+    <div class="explorer-toolbar">
+      <button class="win-button" type="button" (click)="up(); $event.stopPropagation()" [disabled]="!canGoUp"
+              title="Up one level (Backspace)">
+        <img src="assets/folder-up.png" alt=""/>
+        <span><span class="underline">U</span>p</span>
+      </button>
+      <div class="address">
+        <span class="address-label"><span class="underline">A</span>ddress</span>
+        <div class="address-field">{{address}}</div>
+      </div>
+    </div>
+    <div class="icon-grid">
+      <desktop-icon *ngFor="let icon of icons" [icon]="icon" [notDraggable]="true" [blackText]="true"
+                    (setSelected)="setSelected($event)"></desktop-icon>
+      <div class="empty" *ngIf="loadError">Could not load pictures.</div>
+      <div class="empty" *ngIf="!loadError && current && icons.length === 0">This folder is empty.</div>
+    </div>
+    <div class="status-bar">
+      <div class="status-cell">{{current ? current.folders.length + current.images.length : 0}} object(s)</div>
+      <div class="status-cell wide">{{current && current.images.length ? current.images.length + ' picture(s)' : ''}}</div>
+    </div>
+  </div>
+  <window #viewerWindow></window>
+</ng-container>
