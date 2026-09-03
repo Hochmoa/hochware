@@ -7,7 +7,7 @@ import {ChangeDetectorRef, Component, ElementRef, Input, ViewChild} from '@angul
 })
 export class ContentAboutComponent {
   text: string = "Surprise! This is not actually Windows NT.\n\n" +
-    "Handcrafted with love by Martin Hochmair\n\n" +
+    "Handcrafted with love by Martin Hochmair, before Agentic Coding was a thing\n\n" +
     "No external Libraries used except for:\n" +
     "-Angular\n" +
     "-Angular/CDK\n" +
