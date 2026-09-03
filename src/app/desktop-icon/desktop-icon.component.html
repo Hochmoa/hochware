@@ -5,5 +5,8 @@
      (click)="setSelected.emit(this)"
      [ngClass]="{'grab':dragging,'selected':icon.selected}">
   <img src="{{icon.imgSrc}}"/>
-  <div [ngClass]="{'black-text':blackText}">{{icon.text}}</div>
+  <div [ngClass]="{'black-text':blackText}">
+    <a *ngIf="icon.href; else plain" [href]="icon.href" target="_blank" rel="noopener" (click)="$event.preventDefault()">{{icon.text}}</a>
+    <ng-template #plain>{{icon.text}}</ng-template>
+  </div>
 </div>

@@ -81,6 +81,7 @@ export class DesktopComponent implements OnInit, AfterViewInit {
       imgSrc: 'assets/rs3.png',
       text: 'RS3 Trainer',
       id: 8,
+      href: 'https://rs3trainer.hochware.com',
       doubleClick: () => {
         window.open('https://rs3trainer.hochware.com', '_blank')
       }
@@ -110,6 +111,8 @@ export class DesktopIcon {
   imgSrc!: string;
   text!: string;
   selected?: boolean;
+  /** real link target (rendered as <a> so the link is crawlable); double-click still uses doubleClick */
+  href?: string;
   id!: number;
   doubleClick!: Function;
 }
