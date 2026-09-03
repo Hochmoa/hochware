@@ -76,6 +76,14 @@ export class DesktopComponent implements OnInit, AfterViewInit {
       doubleClick: () => {
         this.windowComponentPics.open(WindowType.Pics)
       }
+    },
+    {
+      imgSrc: 'assets/rs3.png',
+      text: 'RS3 Trainer',
+      id: 8,
+      doubleClick: () => {
+        window.open('https://rs3trainer.hochware.com', '_blank')
+      }
     }
   ]]
 
