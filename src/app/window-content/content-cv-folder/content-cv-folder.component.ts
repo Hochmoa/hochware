@@ -30,6 +30,6 @@ export class ContentCvFolderComponent {
 
   openPdf(lang: string) {
     if (lang == "en") this.windowComponentCVEnglish.open(WindowType.CVEnglish);
-    if (lang == "de") this.windowComponentCVGerman.open(WindowType.CVEnglish);
+    if (lang == "de") this.windowComponentCVGerman.open(WindowType.CVGerman);
   }
 }

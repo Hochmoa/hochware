@@ -8,4 +8,8 @@ import {Component, Input, ViewEncapsulation} from '@angular/core';
 })
 export class ContentPdfComponent {
   @Input() pdfSrc!: string;
+
+  get fileName(): string {
+    return this.pdfSrc ? this.pdfSrc.substring(this.pdfSrc.lastIndexOf('/') + 1) : 'document.pdf';
+  }
 }

@@ -1,10 +1,18 @@
 <ng-container>
-  <div style="background:white">
-    <pdf-viewer [src]="pdfSrc"
-                [render-text]="true"
-                [original-size]="false"
-                style="width: 600px; height: 462px;"
-
-    ></pdf-viewer>
+  <div class="pdf-window">
+    <div class="pdf-toolbar">
+      <a class="win-button" [href]="pdfSrc" [download]="fileName" title="Download {{fileName}}">
+        <span class="floppy"></span>
+        <span><span class="underline">D</span>ownload</span>
+      </a>
+      <span class="pdf-filename">{{fileName}}</span>
+    </div>
+    <div class="pdf-frame">
+      <pdf-viewer [src]="pdfSrc"
+                  [render-text]="true"
+                  [original-size]="false"
+                  style="width: 600px; height: 432px;"
+      ></pdf-viewer>
+    </div>
   </div>
 </ng-container>
