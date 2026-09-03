@@ -165,25 +165,6 @@
           "height": 1205
         }
       ]
-    },
-    {
-      "name": "Robot Arm",
-      "path": "robot-arm",
-      "folders": [],
-      "images": [
-        {
-          "name": "CAD of robot arm",
-          "src": "assets/pics/robot-arm/cad-of-robot-arm.jpg",
-          "width": 1205,
-          "height": 1600
-        },
-        {
-          "name": "It was a nice experiment, but the motors were too weak",
-          "src": "assets/pics/robot-arm/it-was-a-nice-experiment-but-the-motors-were-too-weak.jpg",
-          "width": 1205,
-          "height": 1600
-        }
-      ]
     }
   ],
   "images": [

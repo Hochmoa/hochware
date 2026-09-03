@@ -5,12 +5,14 @@ max 1600 px on the long edge, writes them to src/assets/pics/<same structure> wi
 URL-safe file names and produces src/assets/pics/manifest.json describing the tree.
 
 Usage:  python tools/pics/build-pics.py [source-folder]
+A source folder containing an empty file named ".hidden" is skipped.
 """
 import json
 import os
 import re
 import shutil
 import sys
+import time
 from pathlib import Path
 
 from PIL import Image, ImageOps
@@ -20,6 +22,7 @@ REPO = Path(__file__).resolve().parents[2]
 OUT = REPO / "src" / "assets" / "pics"
 MAX_EDGE = 1600
 JPEG_QUALITY = 82
+HIDE_MARKER = ".hidden"  # put an empty file with this name into a source folder to keep it off the site
 IMAGE_EXT = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp"}
 
 
@@ -35,6 +38,8 @@ def build_folder(src_dir: Path, rel: Path) -> dict:
     used = set()
     for entry in sorted(src_dir.iterdir(), key=lambda p: p.name.lower()):
         if entry.is_dir():
+            if (entry / HIDE_MARKER).exists():
+                continue  # folder opted out of the gallery
             folders.append(build_folder(entry, rel / slug(entry.name) if str(rel) != "." else Path(slug(entry.name))))
             folders[-1]["name"] = entry.name
         elif entry.suffix.lower() in IMAGE_EXT:
@@ -68,8 +73,13 @@ def convert(src: Path, target: Path):
 
 
 def main():
-    if OUT.exists():
-        shutil.rmtree(OUT)
+    for attempt in range(5):  # Windows: a watcher (ng serve) may briefly hold the folder
+        if not OUT.exists():
+            break
+        try:
+            shutil.rmtree(OUT)
+        except OSError:
+            time.sleep(0.5)
     tree = build_folder(SRC, Path("."))
     tree["name"] = "Pics"
     (OUT / "manifest.json").write_text(json.dumps(tree, indent=2, ensure_ascii=False), encoding="utf-8")
